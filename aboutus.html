@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>台東回響樂團</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="Resource-type" content="" />
+	<link rel="icon" href="logo.ico">
+	<!-- <meta property="og:image" content="../img/index/1200x628.jpg"> -->
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="css/slick.css" /> -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/slick-theme.css" /> -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="css/aboutus.css" />
+	<!-- js -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<!-- <script src="js/slick.js"></script> -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+	<script src="js/wow.min.js"></script>
+
+	<script src="js/imgLiquid-min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+	
+	<header id="header"></header>
+
+	<section>
+		<div class="topic aboutus_topic">
+            <h2>About Us</h2>
+            <h1>關於回響</h1>
+		</div>
+		<div class="aboutus_info">
+			<div class="container">
+				<div class="info_title">
+                    台東回響樂團
+					<span>taitung echo orchestra</span>
+				</div>
+				<div class="info_content">
+                    <img src="img/aboutus-img.jpg" alt="">
+                    <p>台東回響樂團成立於 2014 年，為臺東目前唯一民間成立的管弦樂團。</p>
+                    <p>「回響」即「回鄉」之意，自成立後，便致力於創造演出平台，不僅讓在臺東生長的學子有更多機會接觸音樂，也讓在外地的臺東子弟能回鄉展演貢獻所學，進而協助推動臺東藝文發展能量，與國際接軌。此外，回響樂團致力於各編制及內容演出，包括古典、流行、爵士、民謠等，並以獨奏、室內樂以及管絃樂團編制演出，以擴展團員們的各種演出能力及經驗。除了定期於臺東舉辦展演，演出足跡亦遍於臺灣各地。</p>
+                    <p>「回響」即「回鄉」之意，自成立後，便致力於創造演出平台，不僅讓在臺東生長的學子有更多機會接觸音樂，也讓在外地的臺東子弟能回鄉展演貢獻所學，進而協助推動臺東藝文發展能量，與國際接軌。此外，回響樂團致力於各編制及內容演出，包括古典、流行、爵士、民謠等，並以獨奏、室內樂以及管絃樂團編制演出，以擴展團員們的各種演出能力及經驗。除了定期於臺東舉辦展演，演出足跡亦遍於臺灣各地。</p>
+                    <p>創立後，樂團不斷地擴展其規模，走向專業化，期望能在臺東深耕穩定發展。 2021 年起，回響樂團於臺東臺糖文創園區 13 號倉庫創建了 Le Ark 音樂方舟藝術展演中心，並將之打造成為一個全場域的沈浸式跨域藝術平台，結合音 樂、薄幕類全息沈浸式投影、以及聲控式影像設備，進行音樂與各類型的跨域展演，期望能在臺東推動現代展演的新方向與發展之可能性。此場館已獲得 2021 年文策院新創加速器新創團隊之肯定。</p>
+                    <p>近年來，回響樂團亦致力於偏鄉音樂教育計畫，包括在五個原住民重點學校成立、教導音樂社團的「音樂小種子」教育計畫，以及與公益平台合作的「音樂講堂」計畫，讓團員們至臺東偏鄉小學演出，希望能讓偏鄉學童，有更多接觸並學習古典音樂的機會。</p>
+                    <p>自 2016 年起，台東回響樂團連續多年獲得臺東傑出演藝團隊之肯定。2023 年起，為讓樂團在藝術層次更上一層樓，特別聘請前國家交響駐團指揮張尹芳擔任藝術顧問，主導年度節目規劃。</p>
+                </div>
+			</div>
+		</div>
+	</section>
+
+	<!-- <div class="popup popup_send">
+		<div class="popup_content popup_message">您已送出資訊，我們將與您聯繫</div>
+	</div> -->
+	
+	<footer id="footer"></footer>
+
+</body>
+<script>
+	$(document).ready(function () {
+		
+		new WOW().init();
+
+		$(".imgLiquidFill").imgLiquid({fill:true});
+
+		$('#header').load('page/header.html');
+		$('#footer').load('page/footer.html');
+
+		$(window).on("scroll", function() {
+			if ($(window).scrollTop() > 100) {
+				$("#header").addClass("fixed");
+				// $(".logo").fadeIn(200);
+			} else {
+				$("#header").removeClass("fixed");
+				// $(".logo").fadeOut(0);
+			}
+		});
+
+		// 點擊 #menu-toggle 切換 .nav_box
+		$("#menu-toggle").on("click", function() {
+			$(".nav_box").toggle();
+		});
+		
+		var mySwiper = new Swiper ('.swiper-container', {
+			slidesPerView: 3,
+      		spaceBetween: 30,
+			autoHeight: true,
+			pagination: {
+				el: '.swiper-pagination',
+        		clickable: true,
+				type: 'bullets',
+					// 	clickable: true,
+					// renderBullet: function (index, className) {
+					// return '<span class="' + className + '">' + (menu[index]) + '</span>';
+					// },
+			},
+
+			// Navigation arrows
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		})
+	})
+
+
+</script>
+</html>

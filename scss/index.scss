@@ -1,0 +1,343 @@
+@import '_setting';
+@import '_header';
+@import '_footer';
+
+
+.home_kv{
+
+    .photo{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .home_kv_logo{
+        width: 30%;
+        height: 0;
+        padding-bottom: 16%;
+        position: absolute;
+        z-index: 12;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        animation: logo_ani 5s 1s both;
+        @media (max-width:960px){
+            width: 32%;
+            height: 0;
+            padding-bottom: 40%;            
+        }
+    }
+}
+.home_news{
+    padding: 60px 0;
+    .news_topic{
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: 6px;
+        text-align: center;
+        span{
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            font-size: 14px;
+            opacity: .3;
+        }
+    }
+    .swiper{
+        margin-top: 40px;
+        padding-bottom: 60px;
+        .photo{
+            width: 100%;
+            height: 0;
+            padding-bottom: 67%;
+            overflow: hidden;
+        }
+        .info{
+            h4{
+                font-size: 16px;
+                // font-weight: 600;
+                // line-height: 1.2;
+                margin-top: 20px;
+            }
+            h3{
+                font-size: 24px;
+                // font-weight: 600;
+                // line-height: 1.4;
+                // letter-spacing: 2px;
+                margin-top: 10px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                box-sizing:border-box;
+            }
+            p{
+                // font-size: 16px;
+                // line-height: 1.4;
+                font-family: "Noto Sans TC", sans-serif;
+                // letter-spacing: 2px;
+                margin-top: 20px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+                box-sizing:border-box;
+            }
+        }
+        .link{
+            text-align: center;
+            vertical-align: middle;
+            text-transform: uppercase;
+            font-size: 18px;
+            margin-top: 20px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            background: #000;
+            color: #fff;
+            padding: 4px 0;
+            span{
+                vertical-align: bottom;
+                font-size: 24px;
+                transition: all .3s;
+                color: #fff;
+            }
+        }
+        a:hover{
+            .link{
+                span{
+                    transform: translateX(4px);
+                }
+            }
+
+        }
+        .swiper-button-next:after, .swiper-button-prev:after{
+            display: none;
+        }
+        .swiper-button-next{
+            right: 0;
+            top: auto;
+            bottom: 0;
+            background: none;
+        }
+        .swiper-button-prev{
+            left: 0;
+            top: auto;
+            bottom: 0;
+            background: none;
+        }
+        .swiper-button-next span, .swiper-button-prev span{
+            color: #fff;
+            background: #000;
+            @media (max-width: 1080px){
+                font-size: 30px;
+            }
+        }
+        .swiper-pagination{
+            bottom: 0;
+            .swiper-pagination-bullet{
+                background: #000;
+            }
+            .swiper-pagination-bullet-active{
+                background: $secondery-color;
+            }
+        }
+    }
+}
+.home_aboutus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #000;
+    .aboutus_photo{
+        width: 65%;
+    }
+    .aboutus_info{
+        width: 35%;
+        padding-right: 10%;
+        .aboutus_topic{
+            font-size: 28px;
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: 6px;
+            text-align: left;
+            color: #fff;
+            span{
+                display: block;
+                text-transform: uppercase;
+                letter-spacing: 6px;
+                font-size: 14px;
+                color: #fff;
+                opacity: .3;
+            }
+        }
+        .aboutus_content{
+            p{
+                color: #fff;
+                font-family: $_font-sans;
+            }
+        }
+    }
+}
+.home_contactus{
+    padding: 60px 0;
+    background: #000;
+    .contactus_topic{
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: 6px;
+        text-align: center;
+        color: #fff;
+        span{
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            font-size: 14px;
+            color: #fff;
+            opacity: .3;
+        }
+    }
+    .contactus_social{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        .item{
+            width: 60px;
+        }
+        .item + .item{
+            margin-left: 40px;
+        }
+    }
+}
+.home_events{
+    padding: 60px 0;
+    .events_topic{
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: 6px;
+        text-align: center;
+        span{
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            font-size: 14px;
+            opacity: .3;
+        }
+    }
+    .swiper{
+        margin-top: 40px;
+        padding-bottom: 60px;
+        .photo{
+            width: 100%;
+            height: 0;
+            padding-bottom: 143%;
+            overflow: hidden;
+        }
+        .info{
+            h3{
+                font-size: 24px;
+                height: 72px;
+                // font-weight: 600;
+                // line-height: 1.4;
+                // letter-spacing: 2px;
+                margin-top: 10px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                box-sizing:border-box;
+            }
+            p{
+                // font-size: 16px;
+                // line-height: 1.4;
+                height: 56px;
+                font-family: "Noto Sans TC", sans-serif;
+                // letter-spacing: 2px;
+                margin-top: 20px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                box-sizing:border-box;
+            }
+        }
+        .link{
+            text-align: center;
+            vertical-align: middle;
+            text-transform: uppercase;
+            font-size: 18px;
+            margin-top: 20px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            background: #000;
+            color: #fff;
+            padding: 4px 0;
+            span{
+                vertical-align: bottom;
+                font-size: 24px;
+                transition: all .3s;
+                color: #fff;
+            }
+        }
+        a:hover{
+            .link{
+                span{
+                    transform: translateX(4px);
+                }
+            }
+
+        }
+        .swiper-button-next:after, .swiper-button-prev:after{
+            display: none;
+        }
+        .swiper-button-next{
+            right: 0;
+            top: auto;
+            bottom: 0;
+            background: none;
+        }
+        .swiper-button-prev{
+            left: 0;
+            top: auto;
+            bottom: 0;
+            background: none;
+        }
+        .swiper-button-next span, .swiper-button-prev span{
+            color: #fff;
+            background: #000;
+            @media (max-width: 1080px){
+                font-size: 30px;
+            }
+        }
+        .swiper-pagination{
+            bottom: 0;
+            .swiper-pagination-bullet{
+                background: #000;
+            }
+            .swiper-pagination-bullet-active{
+                background: $secondery-color;
+            }
+        }
+    }
+}
+
+@keyframes logo_ani{
+    0% {
+        opacity: 0;
+        filter: blur(5px);
+    }
+
+    70%, 100% {
+        opacity: 1;
+        filter: blur(0px);
+    }
+}

@@ -1,0 +1,63 @@
+<div class="logo">
+    <a href="index.html">
+        <img src="./img/logo.svg" alt="">
+    </a>
+</div>
+
+
+<nav>
+
+    <button id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="nav_box">
+        <ul class="nav_primary">
+            <li>
+                <a href="aboutus.html">關於回響
+                    <span class="material-icons">
+                        arrow_drop_down
+                    </span>
+                </a>
+                <ul class="nav_secondery">
+                    <li><a href="OrchestraConductor.html">音樂指揮</a</li>
+                    <li><a href="AssistantConductor.html">助理指揮</a></li>
+                    <li><a href="OrchestraMember.html">樂團成員</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="news.html">最新消息</a>
+            </li>
+            <li>
+                <a href="projects.html">偏鄉深耕</a>
+            </li>
+            <li>
+                <a href="history.html">歷史回顧</a>
+            </li>
+            <li>
+                <a href="contactus.html">演出接洽</a>
+            </li>
+            <li>
+                <a href="sponsor.html">支持與贊助</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<Script>
+    $(document).ready(function () {
+
+        $('.nav_primary > li').hover(
+        function() {
+            $(this).find('.nav_secondery').stop(true, true).slideDown(200);
+        },
+        function() {
+            $(this).find('.nav_secondery').stop(true, true).slideUp(200);
+        }
+    );
+
+    });
+</Script>
