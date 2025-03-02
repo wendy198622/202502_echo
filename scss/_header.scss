@@ -50,7 +50,7 @@ header{
                        font-weight: 600;
                        letter-spacing: 2px;
                        line-height: 3;
-                       padding: 0 10px;
+                       padding: 0 16px;
                        color: #000;
                        span{
                             vertical-align: middle;
@@ -58,23 +58,23 @@ header{
                             color: #000;
                         }
                     }
-                    &:after{
-                        content: "";
-                        position: absolute;
-                        width: 0%;
-                        height: 2px;
-                        border-radius: 2px;
-                        bottom: 0;
-                        left: 0;
-                        display: block;
-                        background: $secondery-color;
-                        transition: all .3s;
-                    }
-                    &:hover{
-                        &:after{
-                            width: 100%;
-                        }
-                    }
+                    // &:after{
+                    //     content: "";
+                    //     position: absolute;
+                    //     width: 0%;
+                    //     height: 2px;
+                    //     border-radius: 2px;
+                    //     bottom: 0;
+                    //     left: 0;
+                    //     display: block;
+                    //     background: $secondery-color;
+                    //     transition: all .3s;
+                    // }
+                    // &:hover{
+                    //     &:after{
+                    //         width: 100%;
+                    //     }
+                    // }
 
                 }
                 > li + li{
@@ -83,6 +83,7 @@ header{
 
                 .nav_secondery{
                     width: 100%;
+                    width: auto;
                     opacity: 0;
                     visibility: hidden;
                     border-radius: 0 0 4px 4px;
@@ -96,9 +97,10 @@ header{
                         padding: 0;
                         a{
                             width: 100%;
-                            padding: 0 20px;
+                            padding: 0 16px;
                             text-align: center;
                             color: #fff;
+                            white-space:nowrap;
                         }
 
                         &:hover{

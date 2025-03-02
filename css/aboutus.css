@@ -401,7 +401,7 @@ header nav .nav_box .nav_primary li a {
   font-weight: 600;
   letter-spacing: 2px;
   line-height: 3;
-  padding: 0 10px;
+  padding: 0 16px;
   color: #000;
 }
 
@@ -411,30 +411,13 @@ header nav .nav_box .nav_primary li a span {
   color: #000;
 }
 
-header nav .nav_box .nav_primary li:after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  border-radius: 2px;
-  bottom: 0;
-  left: 0;
-  display: block;
-  background: #2D3D8C;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-
-header nav .nav_box .nav_primary li:hover:after {
-  width: 100%;
-}
-
 header nav .nav_box .nav_primary > li + li {
   margin-left: 24px;
 }
 
 header nav .nav_box .nav_primary .nav_secondery {
   width: 100%;
+  width: auto;
   opacity: 0;
   visibility: hidden;
   border-radius: 0 0 4px 4px;
@@ -451,9 +434,10 @@ header nav .nav_box .nav_primary .nav_secondery li {
 
 header nav .nav_box .nav_primary .nav_secondery li a {
   width: 100%;
-  padding: 0 20px;
+  padding: 0 16px;
   text-align: center;
   color: #fff;
+  white-space: nowrap;
 }
 
 header nav .nav_box .nav_primary .nav_secondery li:hover {

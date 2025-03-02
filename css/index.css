@@ -400,7 +400,7 @@ header nav .nav_box .nav_primary li a {
   font-weight: 600;
   letter-spacing: 2px;
   line-height: 3;
-  padding: 0 10px;
+  padding: 0 16px;
   color: #000;
 }
 
@@ -410,30 +410,13 @@ header nav .nav_box .nav_primary li a span {
   color: #000;
 }
 
-header nav .nav_box .nav_primary li:after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  border-radius: 2px;
-  bottom: 0;
-  left: 0;
-  display: block;
-  background: #2D3D8C;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-
-header nav .nav_box .nav_primary li:hover:after {
-  width: 100%;
-}
-
 header nav .nav_box .nav_primary > li + li {
   margin-left: 24px;
 }
 
 header nav .nav_box .nav_primary .nav_secondery {
   width: 100%;
+  width: auto;
   opacity: 0;
   visibility: hidden;
   border-radius: 0 0 4px 4px;
@@ -450,9 +433,10 @@ header nav .nav_box .nav_primary .nav_secondery li {
 
 header nav .nav_box .nav_primary .nav_secondery li a {
   width: 100%;
-  padding: 0 20px;
+  padding: 0 16px;
   text-align: center;
   color: #fff;
+  white-space: nowrap;
 }
 
 header nav .nav_box .nav_primary .nav_secondery li:hover {
@@ -1084,6 +1068,150 @@ footer .copyright {
 }
 
 .home_events .swiper .swiper-pagination .swiper-pagination-bullet-active {
+  background: #2D3D8C;
+}
+
+.home_events2 {
+  padding: 60px 0;
+}
+
+.home_events2 .events_topic {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 6px;
+  text-align: center;
+}
+
+.home_events2 .events_topic span {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 14px;
+  opacity: .3;
+}
+
+.home_events2 .swiper {
+  margin-top: 40px;
+  padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home_events2 .swiper .swiper-slide a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home_events2 .swiper .photo {
+  width: 42%;
+  height: 0;
+  padding-bottom: 60%;
+  overflow: hidden;
+}
+
+.home_events2 .swiper .info {
+  width: 50%;
+}
+
+.home_events2 .swiper .info h3 {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.home_events2 .swiper .info p {
+  height: 56px;
+  font-family: "Noto Sans TC", sans-serif;
+  margin-top: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.home_events2 .swiper .info .link {
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: #000;
+  color: #fff;
+  padding: 4px 0;
+}
+
+.home_events2 .swiper .info .link span {
+  vertical-align: bottom;
+  font-size: 24px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  color: #fff;
+}
+
+.home_events2 .swiper a:hover .link span {
+  -webkit-transform: translateX(4px);
+          transform: translateX(4px);
+}
+
+.home_events2 .swiper .swiper-button-next:after, .home_events2 .swiper .swiper-button-prev:after {
+  display: none;
+}
+
+.home_events2 .swiper .swiper-button-next {
+  right: 0;
+  top: auto;
+  bottom: 0;
+  background: none;
+}
+
+.home_events2 .swiper .swiper-button-prev {
+  left: 0;
+  top: auto;
+  bottom: 0;
+  background: none;
+}
+
+.home_events2 .swiper .swiper-button-next span, .home_events2 .swiper .swiper-button-prev span {
+  color: #fff;
+  background: #000;
+}
+
+@media (max-width: 1080px) {
+  .home_events2 .swiper .swiper-button-next span, .home_events2 .swiper .swiper-button-prev span {
+    font-size: 30px;
+  }
+}
+
+.home_events2 .swiper .swiper-pagination {
+  bottom: 0;
+}
+
+.home_events2 .swiper .swiper-pagination .swiper-pagination-bullet {
+  background: #000;
+}
+
+.home_events2 .swiper .swiper-pagination .swiper-pagination-bullet-active {
   background: #2D3D8C;
 }
 
