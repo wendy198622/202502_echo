@@ -29,6 +29,11 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+
+
 </head>
 
 
@@ -58,20 +63,88 @@
                     <p>段落內容段落內容段落內容段落內容段落內容段落內容段落內容段落內容段落內容段落內容段落內容段落內容段落內容段落內容段落內容段落內容段落內容段落內容段落內容段落內容段落內容段落內容段落內容段落內容段落內容</p>
                     <div class="photo_frame">
                         <div class="item">
-                            <img src="img/newspage_photo1.jpg" alt="">
-                            <span>照片說明</span>
+                            <a href="img/newspage_photo1.jpg" 
+                                data-fancybox="gallery"
+                                data-caption="封面圖1圖說"
+                                >
+                                <div class="photo imgLiquidFill imgLiquid full">
+                                    <img src="img/newspage_photo1.jpg" alt="">
+                                </div>
+                                <span>封面圖1圖說</span>
+                            </a>
+                            <div style="display:none">
+                                <a data-fancybox="gallery" href="img/newspage_photo1.jpg"
+                                data-caption="照片1-1圖說">
+                                  <img src="img/newspage_photo1.jpg" />
+                                </a>
+                                <a data-fancybox="gallery" href="img/newspage_photo1.jpg"
+                                data-caption="照片1-2圖說">
+                                  <img src="img/newspage_photo1.jpg" />
+                                </a>
+                            </div>
                         </div>
                         <div class="item">
-                            <img src="img/newspage_photo1.jpg" alt="">
-                            <span>照片說明</span>
+                            <a href="img/newspage_photo1.jpg" 
+                                data-fancybox="gallery"
+                                data-caption="封面圖2圖說"
+                                >
+                                <div class="photo imgLiquidFill imgLiquid full">
+                                    <img src="img/newspage_photo1.jpg" alt="">
+                                </div>
+                                <span>封面圖2圖說</span>
+                            </a>
+                            <div style="display:none">
+                                <a data-fancybox="gallery" href="img/newspage_photo1.jpg"
+                                data-caption="照片2-1圖說">
+                                  <img src="img/newspage_photo1.jpg" />
+                                </a>
+                                <a data-fancybox="gallery" href="img/newspage_photo1.jpg"
+                                data-caption="照片2-2圖說">
+                                  <img src="img/newspage_photo1.jpg" />
+                                </a>
+                            </div>
                         </div>
                         <div class="item">
-                            <img src="img/newspage_photo1.jpg" alt="">
-                            <span>照片說明</span>
+                            <a href="img/newspage_photo1.jpg" 
+                                data-fancybox="gallery"
+                                data-caption="封面圖3圖說"
+                                >
+                                <div class="photo imgLiquidFill imgLiquid full">
+                                    <img src="img/newspage_photo1.jpg" alt="">
+                                </div>
+                                <span>封面圖3圖說</span>
+                            </a>
+                            <div style="display:none">
+                                <a data-fancybox="gallery" href="img/newspage_photo1.jpg"
+                                data-caption="照片3-1圖說">
+                                  <img src="img/newspage_photo1.jpg" />
+                                </a>
+                                <a data-fancybox="gallery" href="img/newspage_photo1.jpg"
+                                data-caption="照片3-2圖說">
+                                  <img src="img/newspage_photo1.jpg" />
+                                </a>
+                            </div>
                         </div>
                         <div class="item">
-                            <img src="img/newspage_photo1.jpg" alt="">
-                            <span>照片說明</span>
+                            <a href="img/newspage_photo1.jpg" 
+                                data-fancybox="gallery"
+                                data-caption="封面圖4圖說"
+                                >
+                                <div class="photo imgLiquidFill imgLiquid full">
+                                    <img src="img/newspage_photo1.jpg" alt="">
+                                </div>
+                                <span>封面圖4圖說</span>
+                            </a>
+                            <div style="display:none">
+                                <a data-fancybox="gallery" href="img/newspage_photo1.jpg"
+                                data-caption="照片4-1圖說">
+                                  <img src="img/newspage_photo1.jpg" />
+                                </a>
+                                <a data-fancybox="gallery" href="img/newspage_photo1.jpg"
+                                data-caption="照片4-2圖說">
+                                  <img src="img/newspage_photo1.jpg" />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -81,28 +154,28 @@
                     <div class="photo_slider swiper swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="item">
+                                <a href="img/newspage_photo2.jpg" data-fancybox="gallery" data-caption="照片說明1">
                                     <img src="img/newspage_photo2.jpg" alt="">
-                                    <span>照片說明</span>
-                                </div>
+                                </a>
+                                <span>照片說明1</span>
                             </div>
                             <div class="swiper-slide">
-                                <div class="item">
+                                <a href="img/newspage_photo2.jpg" data-fancybox="gallery" data-caption="照片說明2">
                                     <img src="img/newspage_photo2.jpg" alt="">
-                                    <span>照片說明</span>
-                                </div>
+                                </a>
+                                <span>照片說明2</span>
                             </div>
                             <div class="swiper-slide">
-                                <div class="item">
+                                <a href="img/newspage_photo2.jpg" data-fancybox="gallery" data-caption="照片說明3">
                                     <img src="img/newspage_photo2.jpg" alt="">
-                                    <span>照片說明</span>
-                                </div>
+                                </a>
+                                <span>照片說明3</span>
                             </div>
                             <div class="swiper-slide">
-                                <div class="item">
+                                <a href="img/newspage_photo2.jpg" data-fancybox="gallery" data-caption="照片說明4">
                                     <img src="img/newspage_photo2.jpg" alt="">
-                                    <span>照片說明</span>
-                                </div>
+                                </a>
+                                <span>照片說明4</span>
                             </div>
                         </div>
                         <!-- If we need navigation buttons -->
@@ -143,6 +216,10 @@
 
 </body>
 <script>
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        Thumbs: false,
+    });  
+    
 	$(document).ready(function () {
 		new WOW().init();
 
@@ -167,14 +244,18 @@
 		});
 
         var mySwiper = new Swiper ('.swiper-container', {
-			slidesPerView: 3,
-      		spaceBetween: 30,
-
-			// Navigation arrows
-			navigation: {
-				nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
-			},
+            loop: true,             // 無限循環
+            spaceBetween: 10,       // 幻燈片間距
+            slidesPerView: 3,       // 顯示 3 張圖片
+            centeredSlides: true,   // 讓目前的圖片置中
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
 		})
 	})
 

@@ -840,12 +840,40 @@ footer .copyright {
 }
 
 .newspage_frame .theme_style .photo_frame .item {
+  width: 25%;
   text-align: center;
+}
+
+.newspage_frame .theme_style .photo_frame .item a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.newspage_frame .theme_style .photo_frame .item .photo {
+  width: 100%;
+  height: 0;
+  padding-bottom: 67%;
+  overflow: hidden;
 }
 
 .newspage_frame .theme_style .photo_frame .item span {
   font-family: "Noto Sans TC", sans-serif;
   line-height: 2;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 14px;
 }
 
 .newspage_frame .theme_style .photo_frame .item + .item {
@@ -860,13 +888,13 @@ footer .copyright {
   padding: 0;
 }
 
-.newspage_frame .theme_style .photo_slider .item {
+.newspage_frame .theme_style .photo_slider .swiper-wrapper .swiper-slide span {
+  display: block;
   text-align: center;
-}
-
-.newspage_frame .theme_style .photo_slider .item span {
-  font-family: "Noto Sans TC", sans-serif;
   line-height: 2;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 .newspage_frame .theme_style .swiper-button-next:after, .newspage_frame .theme_style .swiper-button-prev:after {
@@ -884,6 +912,8 @@ footer .copyright {
 }
 
 .newspage_frame .theme_style .swiper-button-next span, .newspage_frame .theme_style .swiper-button-prev span {
+  width: 24px;
+  height: 24px;
   color: #000;
   background: #fff;
   border-radius: 20px;
@@ -971,5 +1001,20 @@ footer .copyright {
 .newspage_frame .link_back:hover a span {
   -webkit-transform: translateX(-4px);
           transform: translateX(-4px);
+}
+
+.fancybox__container .fancybox__toolbar button {
+  background: #fff;
+}
+
+.fancybox__container .fancybox__nav button {
+  background: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.fancybox__container .fancybox__nav button:hover {
+  background: #fff;
+  opacity: 0.6;
 }
 /*# sourceMappingURL=news.css.map */
