@@ -37,6 +37,9 @@
             width: calc((100% - 20px) / 2);
             background: #f4f5f6;
             margin-bottom: 12px;
+            @media (max-width: 800px){
+                width: 100%;
+            }
             &.full{
                 width: 100%;
             }

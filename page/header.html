@@ -32,7 +32,7 @@
                 <a href="news.html">最新消息</a>
             </li>
             <li>
-                <a href="javascript:void(0);" ">偏鄉深耕
+                <a href="javascript:void(0);">偏鄉深耕
                     <span class="material-icons">
                         arrow_drop_down
                     </span>
@@ -59,14 +59,20 @@
 <Script>
     $(document).ready(function () {
 
-        $('.nav_primary > li').hover(
-        function() {
-            $(this).find('.nav_secondery').stop(true, true).slideDown(200);
-        },
-        function() {
-            $(this).find('.nav_secondery').stop(true, true).slideUp(200);
+        if ($(window).width() > 960) {
+            $('.nav_primary > li').hover(
+                function() {
+                    $(this).find('.nav_secondery').stop(true, true).slideDown(200);
+                },
+                function() {
+                    $(this).find('.nav_secondery').stop(true, true).slideUp(200);
+                }
+            );
         }
-    );
+        
+        $("#menu-toggle").click(function() {
+            $(".nav_box").toggleClass("open");
+        });
 
     });
 </Script>

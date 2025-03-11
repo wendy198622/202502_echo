@@ -262,8 +262,8 @@
 		});
 		
 		var mySwiper = new Swiper ('.swiper-container', {
-			slidesPerView: 3,
-      		spaceBetween: 30,
+			slidesPerView: 1,
+      		spaceBetween: 10,
 			autoHeight: true,
 			pagination: {
 				el: '.swiper-pagination',
@@ -280,6 +280,12 @@
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev',
 			},
+			breakpoints: {
+				961: { 
+					slidesPerView: 3, // 只顯示 1 張幻燈片
+					spaceBetween: 30  // 減小間距
+				}
+			}
 		})
 	})
 

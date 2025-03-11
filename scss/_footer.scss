@@ -1,36 +1,26 @@
 footer{
     background: #fff;
     padding: 66px 108px;
-    @media (max-width:1400px){
-        padding: 66px 40px;
-    }
     @media (max-width:1080px){
+        padding: 66px;
+    }
+    @media (max-width:960px){
         padding: 40px;
     }
-    @media (max-width: 800px){
+    @media (max-width:600px){
         padding: 20px;
     }
     .content{
         display: flex;
         flex-direction: column;
-        // justify-content: space-between;
-        // align-items: flex-end;
-        @media (max-width:1080px){
-            flex-direction: column;
-            align-items: center;
-        }
         .menu{
             display: flex;
             flex-direction: column;
             .logo{
                 width: 260px;
                 margin: 0 auto;
-                // text-align: left;  
-                @media (max-width:1080px){
-                    margin: 0 auto;
-                }
-                @media (max-width:640px){
-                    width: 260px;
+                @media (max-width:960px){
+                    width: 180px;
                 }
             }
             nav{
@@ -38,31 +28,29 @@ footer{
                 ul{
                     display: flex;
                     justify-content: center;
-                        @media (max-width:640px){
-                            flex-direction: column;
-                            text-align: center;
-                        }
+                    @media (max-width:800px){
+                        flex-wrap: wrap;
+                    }
                     li{
                         display: inline-flex;
-                        @media (max-width:640px){
-                            display: inline-block;
-                        }
+                        margin: 0 20px;
                         a{
                             color: #000;
                             font-size: 20px;
                             line-height: 1.2;
                             font-weight: 600;
                             letter-spacing: 4px;
-                            @media (max-width:640px){                        
-                                line-height: 2;
+                            @media (max-width:960px){
+                                font-size: 16px;
+                            }
+                            @media (max-width:800px){
+                                margin-bottom: 10px;
                             }
                         }
                     }
                     li + li{
-                        margin-left: 40px;
-                        @media (max-width:640px){
-                            margin-left: 0;
-                        }
+                        // margin-left: 40px;
+                        @media (max-width:800px){}
                     }
                 }
             }

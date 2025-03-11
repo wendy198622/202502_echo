@@ -4,11 +4,15 @@
 
 
 .home_kv{
+    position: relative;
 
     .photo{
         width: 100%;
         height: 100vh;
         overflow: hidden;
+        @media (max-width: 1080px){
+            height: auto;
+        }
     }
 
     .home_kv_logo{
@@ -23,11 +27,6 @@
         left: 0;
         margin: auto;
         animation: logo_ani 5s 1s both;
-        @media (max-width:960px){
-            width: 32%;
-            height: 0;
-            padding-bottom: 40%;            
-        }
     }
 }
 .home_news{
@@ -49,25 +48,42 @@
     .swiper{
         margin-top: 40px;
         padding-bottom: 60px;
+        overflow: hidden;
+        a{
+            @media (max-width: 960px) and (min-width: 800px){
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
         .photo{
             width: 100%;
             height: 0;
             padding-bottom: 67%;
             overflow: hidden;
+            @media (max-width: 960px) and (min-width: 800px){
+                width: 48%;
+                height: 0;
+                padding-bottom: 30%;
+            }
         }
         .info{
             overflow: hidden;
+            @media (max-width: 960px) and (min-width: 800px){
+                width: 50%;
+            }
             h4{
                 font-size: 16px;
                 // font-weight: 600;
                 // line-height: 1.2;
                 margin-top: 20px;
+                @media (max-width: 960px) and (min-width: 800px){
+                    margin-top: 10px;
+                }
             }
             h3{
-                font-size: 24px;
-                // font-weight: 600;
-                // line-height: 1.4;
-                // letter-spacing: 2px;
+                font-size: 22px;
                 margin-top: 10px;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -77,10 +93,7 @@
                 box-sizing:border-box;
             }
             p{
-                // font-size: 16px;
-                // line-height: 1.4;
                 font-family: "Noto Sans TC", sans-serif;
-                // letter-spacing: 2px;
                 margin-top: 20px;
                 overflow: hidden;
                 text-overflow: ellipsis;
@@ -88,6 +101,9 @@
                 -webkit-box-orient: vertical;
                 -webkit-line-clamp: 3;
                 box-sizing:border-box;
+                @media (max-width: 960px){
+                    -webkit-line-clamp: 2;
+                }
             }
             span{
                 display: inline-block;
@@ -105,6 +121,12 @@
             letter-spacing: 2px;
             background: #000;
             padding: 4px 0;
+            @media (max-width: 960px) and (min-width: 800px){
+                display: flex;
+                width: 140px;
+                justify-content: center;
+                float: right;
+            }
             a{
                 color: #fff;
                 span{
@@ -161,8 +183,14 @@
     justify-content: space-between;
     align-items: center;
     background: #f4f5f6;
+    @media (max-width: 960px){
+        flex-direction: column;
+    }
     .aboutus_photo{
         width: 65%;
+        @media (max-width: 960px){
+            width: 80%;
+        }
         img{
             padding: 120px;
         }
@@ -170,6 +198,9 @@
     .aboutus_info{
         width: 40%;
         padding: 0 5%;
+        @media (max-width: 960px){
+            width: 90%;
+        }
         .aboutus_topic{
             font-size: 28px;
             font-weight: 600;
@@ -225,6 +256,35 @@
         }
     }
 } 
+.home_leark{
+    @media (max-width: 960px){
+        flex-direction: column-reverse;
+        padding-bottom: 100px;
+    }
+    .aboutus_info{
+        @media (max-width: 1200px){
+            width: 45%;
+            padding: 0 0 0 5%;
+        }
+        @media (max-width: 960px){
+            width: 90%;
+        }
+    }
+    .aboutus_photo{
+        @media (max-width: 960px){
+            width: 80%;
+        }
+        img{
+            padding: 120px;
+            @media (max-width: 1200px){
+                padding: 60px;
+            }
+            @media (max-width: 960px){
+                padding: 80px 0;
+            }
+        }
+    }
+}
 .home_aboutus{
     background: #000;
     .aboutus_photo{

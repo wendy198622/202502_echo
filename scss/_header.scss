@@ -8,12 +8,11 @@ header{
     align-items: center;
     justify-content: space-between;
     overflow: visible;
-    // background: #fff;
-    @media (max-width: 800px){
-        padding: 20px;
+    @media (max-width: 1200px){
+        padding: 24px;
     }
-    @media (max-width: 640px){
-        padding: 12px;
+    @media (max-width: 800px){
+        padding: 16px;
     }
     &.fixed{
         // position: fixed;
@@ -23,7 +22,7 @@ header{
     .logo{
         width: 200px;
         transition: all .3s;
-        @media (max-width:640px){
+        @media (max-width: 600px){
             width: 160px;
         }
 
@@ -37,8 +36,17 @@ header{
         justify-content: flex-end;
         flex-direction: row-reverse;
         .nav_box{
-                display: flex;
-                align-items: center;
+            display: flex;
+            align-items: center;
+            @media (max-width:960px){
+                display: none;
+                width: 100%;
+                position: fixed;
+                top: 0;
+                right: 0;
+                background: #000;
+                transition: all .3s;
+            }
             .nav_primary{
                 display: flex;
                 position: relative;
@@ -46,39 +54,35 @@ header{
                     position: relative;
 
                    a{
-                       color: $primary-color;
-                       font-weight: 600;
-                       letter-spacing: 2px;
-                       line-height: 3;
-                       padding: 0 16px;
-                       color: #000;
+                        color: $primary-color;
+                        font-weight: 600;
+                        letter-spacing: 2px;
+                        line-height: 3;
+                        padding: 0 16px;
+                        color: #000;
+                        @media (max-width: 1200px){
+                            letter-spacing: 1px;
+                            padding: 0 8px;
+                        }
+                        @media (max-width:960px){
+                            line-height: 4;
+                        }
                        span{
                             vertical-align: middle;
                             margin-top: -4px;
                             color: #000;
                         }
+                        &:hover{
+                            background-color: rgba(255,255,255,.2);
+                        }
                     }
-                    // &:after{
-                    //     content: "";
-                    //     position: absolute;
-                    //     width: 0%;
-                    //     height: 2px;
-                    //     border-radius: 2px;
-                    //     bottom: 0;
-                    //     left: 0;
-                    //     display: block;
-                    //     background: $secondery-color;
-                    //     transition: all .3s;
-                    // }
-                    // &:hover{
-                    //     &:after{
-                    //         width: 100%;
-                    //     }
-                    // }
 
                 }
                 > li + li{
                     margin-left: 24px;
+                    @media (max-width: 1200px){
+                        margin-left: 12px;
+                    }
                 }
 
                 .nav_secondery{
@@ -118,19 +122,75 @@ header{
                 opacity: 1;
                 visibility: visible;
             }
+
+            &.open{
+                display: block;
+                .nav_primary{
+                    width: 100%;
+                    justify-content: center;
+                    flex-direction: column;
+                    li{
+                        // text-align: center;
+    
+                       a{
+                            color: #fff;
+                            padding: 0 40px;
+                            span{
+                                color: #fff;
+                            }
+                       }
+                    }
+                    > li + li{
+                        margin-left: 0;
+                    }
+
+                    .nav_secondery{
+                        // width: 100%;
+                        // width: auto;
+                        opacity: 1;
+                        visibility: visible;
+                        // border-radius: 0 0 4px 4px;
+                        position: static;
+                        top: auto;
+                        // // padding: 10px 0;
+                        // transition: all .3s;
+                        background: none;
+    
+                        li{
+                            // padding: 0;
+                                padding: 0 40px;
+                            a{
+                                // width: 100%;
+                                text-align: left;
+                                // color: #fff;
+                                // white-space:nowrap;
+                            }
+    
+                            &:hover{
+                                // background-color: rgba(255,255,255,.2);
+                                // cursor: pointer;
+    
+                                &:after{
+                                    // display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         #menu-toggle{
             background-color: transparent;
             // padding-left: 20px;
             display: none;
-            @media (max-width:1080px){
-                // display: block;
+            @media (max-width:960px){
+                display: block;
             }
     
             span{
                 display: block;
-                background: $secondery-color;
+                background: #000;
                 width: 32px;
                 height: 4px;
                 border-radius: 10px;
@@ -188,6 +248,11 @@ header{
             display: none;
         }
         nav{
+            #menu-toggle{
+                span{
+                    background: #fff;
+                }
+            }
             .nav_box{
                 .nav_primary{
                     li{
@@ -205,6 +270,11 @@ header{
             justify-content: space-between;
             background: rgba(255,255,255,.8);
             nav{
+                #menu-toggle{
+                    span{
+                        background: #000;
+                    }
+                }
                 .nav_box{
                     .nav_primary{
                         li{
