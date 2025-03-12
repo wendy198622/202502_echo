@@ -41,13 +41,34 @@
 			<div class="home_kv_logo">
 				<img src="img/logo_main.svg" alt="">
 			</div>
-			<!-- 電腦版圖片 -->
-			<div class="photo pc imgLiquidFill">
-				<img src="img/home_kv-bg.jpg" alt="">
-			</div>
-			<!-- 手機版圖片 -->
-			<div class="photo mob ">
-				<img src="img/home_kv-bg.jpg" alt="">
+			<div class="photo">
+				<div class="swiper swiper-container-kv">
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide">
+							<!-- 電腦版圖片 -->
+							<img class="pc" src="img/home_kv-bg.jpg" alt="">
+
+							<!-- 手機版圖片 -->
+							<img class="mob" src="img/home_kv-bg_mob.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<!-- 電腦版圖片 -->
+							<img class="pc" src="img/home_kv-bg.jpg" alt="">
+							
+							<!-- 手機版圖片 -->
+							<img class="mob" src="img/home_kv-bg_mob.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<!-- 電腦版圖片 -->
+							<img class="pc" src="img/home_kv-bg.jpg" alt="">
+							
+							<!-- 手機版圖片 -->
+							<img class="mob" src="img/home_kv-bg_mob.jpg" alt="">
+						</div>
+					</div>
+				</div>
+							
 			</div>
 		</div>
 		<div class="home_news">
@@ -261,10 +282,26 @@
 			$(".nav_box").toggle();
 		});
 		
+		var mySwiper = new Swiper ('.swiper-container-kv', {
+			slidesPerView: 1,
+      		spaceBetween: 0,
+			autoHeight: true,
+			autoplay: {
+				delay: 5000,  // 設定間隔時間 (毫秒)
+				disableOnInteraction: false, // 使用者操作後仍繼續自動播放
+			},
+			loop: true, // 讓輪播可以無限循環
+		})
+
 		var mySwiper = new Swiper ('.swiper-container', {
 			slidesPerView: 1,
       		spaceBetween: 10,
 			autoHeight: true,
+			autoplay: {
+				delay: 5000,  // 設定間隔時間 (毫秒)
+				disableOnInteraction: false, // 使用者操作後仍繼續自動播放
+			},
+			loop: true, // 讓輪播可以無限循環
 			pagination: {
 				el: '.swiper-pagination',
         		clickable: true,

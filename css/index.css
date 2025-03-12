@@ -793,9 +793,19 @@ footer .copyright {
   position: relative;
 }
 
+.home_kv:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
 .home_kv .photo {
   width: 100%;
-  height: 100vh;
   overflow: hidden;
 }
 
@@ -818,6 +828,14 @@ footer .copyright {
   margin: auto;
   -webkit-animation: logo_ani 5s 1s both;
           animation: logo_ani 5s 1s both;
+}
+
+@media (max-width: 1080px) {
+  .home_kv .home_kv_logo {
+    width: 50%;
+    height: 0;
+    padding-bottom: 26%;
+  }
 }
 
 .home_news {
