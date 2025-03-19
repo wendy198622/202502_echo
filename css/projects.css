@@ -385,7 +385,6 @@ header.fixed {
 }
 
 header .logo {
-  width: 200px;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
@@ -394,6 +393,21 @@ header .logo {
   header .logo {
     width: 160px;
   }
+}
+
+header .logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .logo a img {
+  width: 200px;
+}
+
+header .logo a img.taiwantop {
+  width: 80px;
+  margin-left: 20px;
 }
 
 header .logo:hover {
