@@ -6,6 +6,35 @@
     background: url(../img/projects-bg.jpg) center center no-repeat;
     background-size: cover;
 }
+.project_intro{
+    p{
+        margin-bottom: 20px;
+    }
+    .project_photo{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        @media (max-width: 960px){
+            flex-wrap: wrap;
+        }
+        .item{
+            text-align: center;
+            @media (max-width: 960px){
+                width: calc((100% - 20px) / 2);
+            }
+            span{
+                font-family: $_font-sans;
+                line-height: 2;
+            }
+        }
+        .item + .item{
+            margin-left: 20px;
+            @media (max-width: 960px){
+                margin-left: 0;
+            }
+        }
+    }
+}
 .projects_frame{
     width: 100%;
     padding: 60px 0;
@@ -202,9 +231,16 @@
         }
         .photo_frame{
             display: flex;
+            justify-content: space-between;
             margin-top: 10px;
+            @media (max-width: 960px){
+                flex-wrap: wrap;
+            }
             .item{
                 text-align: center;
+                @media (max-width: 960px){
+                    width: calc((100% - 20px) / 2);
+                }
                 span{
                     font-family: $_font-sans;
                     line-height: 2;
@@ -212,6 +248,9 @@
             }
             .item + .item{
                 margin-left: 20px;
+                @media (max-width: 960px){
+                    margin-left: 0;
+                }
             }
         }
         .photo_slider{
